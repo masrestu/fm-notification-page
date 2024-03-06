@@ -219,7 +219,8 @@ img {
   body {
     background-color: var(--very-light-grayish-blue);
     padding-top: 1rem;
-    min-height: auto;
+    display: flex;
+    align-items: center;
   }
 
   main {
