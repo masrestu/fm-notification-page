@@ -60,7 +60,7 @@ h6 {
 /* start */
 body {
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   font-size: 16px;
@@ -219,13 +219,15 @@ img {
   body {
     background-color: var(--very-light-grayish-blue);
     padding-top: 1rem;
+    min-height: auto;
   }
 
   main {
     max-width: 730px;
     margin: 0 auto;
     border-radius: 1rem;
-    padding: 35px 30px;
+    padding: 0 30px;
+    padding-top: 35px;
   }
 
   .notif-head {
