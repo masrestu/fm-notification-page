@@ -1,14 +1,3 @@
-/* 
-<div class="notif-card">
-  <div class="notif-img">
-    <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber">
-  </div>
-  <div class="notif-text">
-    <p class="notif-text__full"><span class="user-fullname">Mark Webber</span> reacted to your recent post <span class="post-title">My first tournament today!</span></p>
-    <p class="notif-text__time">1m ago</p>
-  </div>
-</div> 
-*/
 const notifBody = document.querySelector('.notif-body');
 const postText = {
   'react': 'reacted to your recent post',
@@ -71,6 +60,7 @@ function card({avatar, fullname, objectName='', time, category, additionalData='
   } else if (category === 'pic-comment') {
     const imgDataElm = document.createElement('img');
     imgDataElm.classList.add('notif-img__data');
+    imgDataElm.alt = "picture";
     imgDataElm.src = additionalData;
     notifDetails.appendChild(imgDataElm);
   } else if (['leave', 'join'].includes(category)) {
